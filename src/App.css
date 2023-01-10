@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -25,10 +29,45 @@
 }
 
 .waveButton {
-  cursor: pointer;
+
   margin-top: 16px;
   padding: 8px;
   border: 0;
   border-radius: 5px;
-  
+}
+
+.waveButton .point {
+  cursor: pointer;
+}
+
+.waveButton .disable {
+  cursor: not-allowed;
+}
+
+.formContainer {
+  margin-top: 24px;
+  box-sizing: border-box;
+}
+
+.formInput {
+  width: 100%;
+  outline-style: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 28px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.formInput:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.formInput:placeholder-shown {
+  border: 2px solid #a84335;
 }
